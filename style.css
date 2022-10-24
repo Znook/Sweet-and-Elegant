@@ -4,40 +4,46 @@
 #DC747D
 #F79F92
 #FCCFBF
-D3DEE5
-EADED6
+#D3DEE5
+#EADED6
 
 */
+
+:root {
+  --main-bg-color: #eaded6;
+  --main-text-color: #f79f92;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 body {
-  background-color: #eaded6;
+  background-color: var(--main-bg-color);
 }
 
 .header {
   position: relative;
-}
-
-.logo-box {
-  display: flex;
-  padding: 1em;
+  height: 80vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(55, 55, 55, 0.1),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(./images/cooks.jpg);
+  background-size: cover;
+  background-position: top;
 }
 
 .logo {
-  width: 80px;
+  width: 100px;
 }
 
-.brand-name {
+.logo-box {
   position: absolute;
-  top: 25%;
-  left: 15%;
-  font-size: 1.5em;
-  color: #564c45;
-  text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+  top: 20px;
+  left: 40px;
 }
