@@ -1,5 +1,6 @@
 /* COLORS!
 
+
 #564C45
 #DC747D
 #F79F92
@@ -14,8 +15,10 @@
   --main-text-color: #f79f92;
 }
 
-* {
-  margin: 5px;
+*, 
+*::after, 
+*::before {
+  margin: 0px;
   padding: 0;
   box-sizing: inherit;
 }
@@ -34,11 +37,11 @@ body {
 
 .header {
   position: relative;
-  height: 80vh;
+  height: 60vh;
   background-image: linear-gradient(
       to right bottom,
       rgba(55, 55, 55, 0.1),
-      rgba(0, 0, 0, 0.5)
+      rgba(0, 0, 0, 0.6)
     ),
     url(./images/cooks.jpg);
   background-size: cover;
@@ -51,14 +54,14 @@ body {
 }
 
 .logo-box {
-  position: absolute;
+  position: relative;
   top: 1rem;
   left: 1rem;
 }
 
 .text-box {
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
