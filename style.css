@@ -15,8 +15,8 @@
   --main-text-color: #f79f92;
 }
 
-*, 
-*::after, 
+*,
+*::after,
 *::before {
   margin: 0px;
   padding: 0;
@@ -55,6 +55,9 @@ body {
 
 .logo-box {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
   top: 1rem;
   left: 1rem;
 }
@@ -138,19 +141,19 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  transition: all .2s;
+  transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
 .btn-pink {
@@ -159,7 +162,7 @@ body {
 }
 
 .btn::after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -168,7 +171,7 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .btn-pink::after {
@@ -181,6 +184,19 @@ body {
 }
 
 .btn-animated {
-  animation: moveInBottom .5s ease-out .75s;
+  animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
+}
+
+.nav {
+  font-size: 2.5rem;
+}
+
+.nav ul,
+li,
+a {
+  display: inline-block;
+  margin: 1rem;
+  color: var(--main-text-color);
+  text-decoration: none;
 }
