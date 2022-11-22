@@ -202,17 +202,23 @@ a {
   text-decoration: none;
 }
 
-.section-container {
+.s1 {
   background-color: #f79f92;
+}
+
+.section-container {
   color: var(--secondary-text-color);
+  display: grid;
+  grid-template-columns: 2fr 2fr;
   height: 25vh;
-  text-align: center;
+  justify-items: center;
+  text-align: left;
   position: relative;
+  padding: 5rem;
 }
 
 .section-container-main {
   display: block;
-  padding: auto 5rem;
   font-size: 6rem;
   font-weight: 600;
   letter-spacing: 1rem;
@@ -220,7 +226,12 @@ a {
 
 .section-container-sub {
   display: block;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 400;
   letter-spacing: 1rem;
+}
+
+.section-container-logo {
+  width: 30em;
+  align-items: center;
 }
