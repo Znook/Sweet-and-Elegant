@@ -1,6 +1,5 @@
 /* COLORS!
 
-
 #564C45
 #DC747D
 #F79F92
@@ -12,8 +11,10 @@
 
 :root {
   --main-bg-color: #eaded6;
+  --secondary-bg-color: #fccfbf;
   --main-text-color: #f79f92;
   --secondary-text-color: #564c45;
+  --btn-color: #d3dee5;
 }
 
 *,
@@ -149,7 +150,7 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
@@ -159,7 +160,13 @@ body {
 
 .btn-pink {
   background-color: var(--main-text-color);
-  color: var(--main-bg-color);
+  color: var(--secondary-text-color);
+}
+
+.btn-blue {
+  background-color: var(--btn-color);
+  color: var(--secondary-text-color);
+  width: 95%;
 }
 
 .btn::after {
@@ -201,20 +208,20 @@ a {
   color: var(--main-text-color);
   text-decoration: none;
 }
-
+/* First section */
 .s1 {
-  background-color: #f79f92;
+  background-color: var(--main-text-color);
+  padding: 2rem;
 }
 
 .section-container {
   color: var(--secondary-text-color);
   display: grid;
   grid-template-columns: 2fr 2fr;
-  height: 25vh;
   justify-items: center;
   text-align: left;
   position: relative;
-  padding: 5rem;
+  padding: 4rem;
 }
 
 .section-container-main {
@@ -232,6 +239,72 @@ a {
 }
 
 .section-container-logo {
-  width: 30em;
+  width: 25em;
+}
+/* section section */
+.s2 {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  background-color: white;
+}
+
+.card {
+  border-radius: 2rem;
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  font-size: 1rem;
+  max-width: 40rem;
+  margin: 1rem;
+  text-decoration: none;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+}
+
+.card-image {
+  background-size: cover;
+  display: block;
+  max-height: 60rem;
+  padding: 1rem;
+}
+
+.card-image > img {
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  display: block;
+  width: 100%;
+}
+
+.card-list {
+  display: block;
+  margin: 1rem auto;
+  padding: 0;
+  font-size: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.card:hover {
+  box-shadow: 0 0.5em 3rem -1rem rgba(0, 0, 0, 0.5);
+  transform: translateY(-0.5rem) scale(1.0125);
+}
+
+.card-description {
+  display: block;
+  padding: 1em 0.5em;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  text-align: left;
+}
+
+.card-description > h2 {
+  font-size: 2rem;
+  margin: 0 0 0.5em;
+  padding-left: 1rem;
+}
+
+.card-description > p {
+  font-size: 2rem;
+  padding-left: 1rem;
 }
