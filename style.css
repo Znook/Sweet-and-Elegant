@@ -13,6 +13,7 @@
 :root {
   --main-bg-color: #eaded6;
   --main-text-color: #f79f92;
+  --secondary-text-color: #564c45;
 }
 
 *,
@@ -199,4 +200,27 @@ a {
   margin: 1rem;
   color: var(--main-text-color);
   text-decoration: none;
+}
+
+.section-container {
+  background-color: #f79f92;
+  color: var(--secondary-text-color);
+  height: 25vh;
+  text-align: center;
+  position: relative;
+}
+
+.section-container-main {
+  display: block;
+  padding: auto 5rem;
+  font-size: 6rem;
+  font-weight: 600;
+  letter-spacing: 1rem;
+}
+
+.section-container-sub {
+  display: block;
+  font-size: 4rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
 }
